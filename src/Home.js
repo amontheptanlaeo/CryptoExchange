@@ -8,7 +8,7 @@ function Home() {
   const getData = async () => {
     try {
       const res = await axios.get(
-        "https://api.nomics.com/v1/currencies/ticker?key=a4226d25887da85cc42bbd51ca0d5047&convert=THB&per-page=10&page=1"  , {
+        "https://api.nomics.com/v1/currencies/ticker?key={KEY}&convert=THB&per-page=10&page=1"  , {
           headers: {"Access-Control-Allow-Origin": "*"}
         }
       );
