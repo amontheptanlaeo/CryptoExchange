@@ -12,11 +12,7 @@ function Home() {
           headers: {"Access-Control-Allow-Origin": "*"}
         }
       );
-      // axios.get("https://api.nomics.com/v1/currencies/ticker?key=a4226d25887da85cc42bbd51ca0d5047&ids=BTC,ETH,XRP,DOGE,ZIL,WAN,ADA,LTC,ZRX,IOST,SNT&interval=1d,7d,30d,365d&convert=THB&per-page=100&page=1");
-
       setData(res.data);
-
-      //console.log(data)
     } catch (error) {
       console.log(error);
     }
